@@ -1,0 +1,32 @@
+header {
+	background:  lighten($tomatoe,4%);
+	padding: .8em  0;
+	min-width: 95%;
+	position: relative;
+	top: 0;
+}
+
+.nav {
+	text-align: center;
+	display: flex;
+	&__item {
+		display: inline-block;
+		cursor: pointer;
+		flex: 1;
+
+		a{
+			color:  #e3e5e8;
+			text-decoration: none;
+
+			&:hover {
+				color:  $main-bg;
+				text-decoration:  underline;
+			}
+		}
+	}
+}
+
+.fixed-nav header  {
+	position: fixed;
+	box-shadow: 0 5px rgba(0,0,0,.1);
+}
